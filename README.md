@@ -19,7 +19,7 @@ return {
     plugin.setup({}) -- currently does nothing, but likely will in future
 
     vim.keymap.set({ "n", "v" }, "<leader>yr", plugin.copy_url_to_unnamed,
-      { desc = "Copy link to remote repo", remap = false })
+      { desc = "Copy link to remote repo", remap = false }) -- copies to the "+" register
   end
 }
 ```
